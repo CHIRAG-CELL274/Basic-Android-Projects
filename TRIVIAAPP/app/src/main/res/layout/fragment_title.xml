@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TitleFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/download"
+        android:layout_marginBottom="400dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="ANDROID TRIVIA"
+       android:layout_marginTop="50dp"
+       android:layout_gravity="center"
+       android:textSize="40sp"
+       android:textColor="@color/teal_200"
+
+       />
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:textSize="40sp"
+
+
+        />
+
+</FrameLayout>
+</layout>

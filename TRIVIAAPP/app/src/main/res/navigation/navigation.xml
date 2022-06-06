@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment2">
+    <fragment
+        android:id="@+id/titleFragment2"
+        android:name="com.example.triviaapp.TitleFragment"
+        android:label="TitleFragment" >
+        <action
+            android:id="@+id/action_titleFragment2_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.triviaapp.GameFragment"
+        android:label="GameFragment" >
+        <action
+            android:id="@+id/action_gameFragment_to_gameLoseFragment"
+            app:destination="@id/gameLoseFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameWonFragment4"
+            app:destination="@id/gameWonFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameLoseFragment"
+        android:name="com.example.triviaapp.GameLoseFragment"
+        android:label="GameLoseFragment" />
+    <fragment
+        android:id="@+id/gameWonFragment4"
+        android:name="com.example.triviaapp.GameWonFragment"
+        android:label="GameWonFragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.triviaapp.AboutFragment"
+        android:label="AboutFragment" />
+</navigation>
